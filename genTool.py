@@ -5,10 +5,7 @@ import cv2
 import json
 from shapely.geometry import Polygon,Point
 import random
-import matplotlib.pyplot as plt
-import numpy as np
-import pandas as pd
-from segment_anything import SamPredictor,sam_model_registry
+from raft import RaftTool
 
 yolo_model = torch.hub.load('ultralytics/yolov5', 'yolov5s', pretrained=True)
 class GenTool:
